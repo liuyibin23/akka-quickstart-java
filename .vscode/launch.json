@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AkkaQuickstart",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.lightbend.akka.sample.AkkaQuickstart",
+            "args": "",
+            "projectName": "akka-quickstart-java"
+        }
+    ]
+}
