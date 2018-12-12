@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "akka-quickstart-java",
+                "projectName": "akka-quickstart-java",
+                "workingDirectory": "e:\\git\\javaweb\\akka-quickstart-java",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "akka-quickstart-java",
+                "projectName": "akka-quickstart-java",
+                "workingDirectory": "e:\\git\\javaweb\\akka-quickstart-java",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

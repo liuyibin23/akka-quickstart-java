@@ -1,13 +1,13 @@
 package com.example;
 
-import akka.testkit.javadsl.TestKit;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-// import org.scalatest.junit.JUnitSuite;
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
+//import akka.testkit.javadsl.TestKit;
+//import org.junit.AfterClass;
+//import org.junit.BeforeClass;
+//import org.junit.Test;
+//// import org.scalatest.junit.JUnitSuite;
+//import org.junit.runner.JUnitCore;
+//import org.junit.runner.Result;
+//import org.junit.runner.notification.Failure;
 
 import akka.actor.AbstractActor;
 import akka.actor.AbstractActor.Receive;
@@ -134,12 +134,12 @@ public class ActorHierarchyExperiments {
     System.out.println("First: " + firstRef);
     firstRef.tell("printit", ActorRef.noSender());
 
-    Result result = JUnitCore.runClasses(ActorHierarchyExperimentsTest.class);
-
-    for (Failure failure : result.getFailures()) {
-        System.out.println(failure.toString());
-     }
-     System.out.println(result.wasSuccessful());
+//    Result result = JUnitCore.runClasses(ActorHierarchyExperimentsTest.class);
+//
+//    for (Failure failure : result.getFailures()) {
+//        System.out.println(failure.toString());
+//     }
+//     System.out.println(result.wasSuccessful());
 
     System.out.println(">>> Press ENTER to exit <<<");
     try {
@@ -150,33 +150,33 @@ public class ActorHierarchyExperiments {
   }
 }
 
-class ActorHierarchyExperimentsTest  {
-    static ActorSystem system;
-  
-    @BeforeClass
-    public static void setup() {
-      system = ActorSystem.create();
-    }
-  
-    @AfterClass
-    public static void teardown() {
-      TestKit.shutdownActorSystem(system);
-      system = null;
-    }
-  
-    @Test
-    public void testStartAndStopActors() {
-      //#start-stop-main
-      ActorRef first = system.actorOf(StartStopActor1.props(), "first");
-      first.tell("stop", ActorRef.noSender());
-      //#start-stop-main
-    }
-  
-    @Test
-    public void testSuperviseActors() {
-      //#supervise-main
-      ActorRef supervisingActor = system.actorOf(SupervisingActor.props(), "supervising-actor");
-      supervisingActor.tell("failChild", ActorRef.noSender());
-      //#supervise-main
-    }
-  }
+//class ActorHierarchyExperimentsTest  {
+//    static ActorSystem system;
+//
+//    @BeforeClass
+//    public static void setup() {
+//      system = ActorSystem.create();
+//    }
+//
+//    @AfterClass
+//    public static void teardown() {
+//      TestKit.shutdownActorSystem(system);
+//      system = null;
+//    }
+//
+//    @Test
+//    public void testStartAndStopActors() {
+//      //#start-stop-main
+//      ActorRef first = system.actorOf(StartStopActor1.props(), "first");
+//      first.tell("stop", ActorRef.noSender());
+//      //#start-stop-main
+//    }
+//
+//    @Test
+//    public void testSuperviseActors() {
+//      //#supervise-main
+//      ActorRef supervisingActor = system.actorOf(SupervisingActor.props(), "supervising-actor");
+//      supervisingActor.tell("failChild", ActorRef.noSender());
+//      //#supervise-main
+//    }
+//  }
