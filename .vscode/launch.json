@@ -2,6 +2,17 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ActorHierarchyExperiments",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.example.ActorHierarchyExperiments",
+            "args": "",
+            "projectName": "akka-quickstart-java"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AkkaQuickstart",
             "request": "launch",
             "cwd": "${workspaceFolder}",
